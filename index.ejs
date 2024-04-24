@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JOkies</title>
+ 
+  <style>
+
+    
+@media(min-width:319px)and(max-width:480px){
+     body{
+      background-color: darkgray;
+      width: 100%;
+     }
+    }
+    @media (min-width:481px) and (max-width:1200px)
+    {
+      body{        
+      width: 100%;
+      background-color: cadetblue;
+      }
+    }
+    @media(min-width:1201px) and (max-width:1600px)
+    {
+      body{
+        background-color: antiquewhite;
+      width: 100%;
+    }
+    }
+        
+    .container {
+      max-width: 900px;
+      margin: 50px auto;
+      background-color: #cdaaaa;
+      padding: 20px;
+      border-radius: 5px;
+    }
+
+    </style>
+</head>
+
+
+<body>
+
+  <h1>Jokes for U...</h1>
+    <div class="container">
+        <div class="response-area">
+         
+          <p>
+            <%= content %>
+          </p>
+        </div>
+       
+  <form action="/" method="POST">
+    <label>Category</label>
+    <select name="category" class="form-select">
+      <option value="" data-display="Select">Random type</option>
+      <option value="Any">Any</option>
+      <option value="Misc">Misc</option>
+      <option value="Programming">Programming</option>
+      <option value="Dark">Dark</option>
+      <option value="Pun">Pun</option>
+      <option value="Spooky">Spooky</option>
+      <option value="christmas">christmas</option>
+    </select>
+    <button type="submit">GO</button>
+  </form>
+
+</body>
+
+</html>
